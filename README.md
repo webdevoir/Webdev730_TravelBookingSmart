@@ -1,9 +1,8 @@
-# TravelSmart
-See Live Version Here: [https://travelsmart1.herokuapp.com](https://travelsmart1.herokuapp.com)
+# Webdev730_TravelBookingSmart
 
-![travelsmart-search](/app/assets/images/search.gif)
+![Webdev730_TravelBookingSmart-search](/app/assets/images/search.gif)
 
-TravelSmart draws inspiration from AirBnB and helps users find homes for temporary stay based on multiple filters. It also lets them book and review locations.
+Webdev730_TravelBookingSmart draws inspiration from AirBnB and helps users find homes for temporary stay based on multiple filters. It also lets them book and review locations.
 
 ## Contents
 **Features**
@@ -33,7 +32,7 @@ This project was developed using Ruby on Rails, React.js with Redux, Google Maps
 ## User Authentication
 On the back-end, an encrypted, hashed password is stored in the database (passwords are never saved to the database). On log-in, the provided password is rehashed using BCrypt and compared to the encrypted password in order to verify the log-in. A session token is used to achieve this, making sure the user is logged in when navigating the website. SecureRandom gem was used for this. Bootstrapping the current user is used to keep the user logged in on refresh of the page.
 
-![TravelSmart-show](/app/assets/images/booking.gif)
+![Webdev730_TravelBookingSmart-show](/app/assets/images/booking.gif)
 
 ## Home Show Page
 All homes are stored in the database, which contains columns for:
@@ -101,7 +100,7 @@ Home Show Page State Shape:
 
 
 ## Map Filters
-TravelSmart offers real-time filtering based on roomtype and price (per month). The Redux state is updated with a list of all the homes matching both the filter query and location bounds. Map markers are then populated on the map as an overlay for every location stored in the state. With every filter or idle state of the map, old map markers are replaced with new map markers; the bounds also resize automatically when zooming in or out of the map. Markers pertaining to a certain house bounce when the house is hovered over in the homes index, and there
+Webdev730_TravelBookingSmart offers real-time filtering based on roomtype and price (per month). The Redux state is updated with a list of all the homes matching both the filter query and location bounds. Map markers are then populated on the map as an overlay for every location stored in the state. With every filter or idle state of the map, old map markers are replaced with new map markers; the bounds also resize automatically when zooming in or out of the map. Markers pertaining to a certain house bounce when the house is hovered over in the homes index, and there
 is google search functionality with a searchbar that will set the bounds of the map.
 
 ![map-drag](/app/assets/images/map_drag.gif)
